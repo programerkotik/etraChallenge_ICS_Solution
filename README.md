@@ -9,10 +9,6 @@ To use the code, you will need to have the following libraries installed:
 - pandas
 - itertools
 
-You can install these libraries using pip by running the following command:
-
-`pip install numpy matplotlib pandas itertools` 
-
 The main function of the code is get_saccades(df, l=5), which takes as input a DataFrame df containing the eye tracking data, and an optional parameter $\lambda$ which is the value of lambda to use in the saccade detection algorithm. The function returns a copy of the input DataFrame with an additional column 'Saccade' indicating whether each sample corresponds to a saccade, and columns 'Speed in x coordinate' and 'Speed in y coordinate' containing the speed of the eye in each coordinate.
 
 The function `aggregate_fixations(df)` takes as input the DataFrame returned by get_saccades and it will add a new column `'Saccade.event'` indicating the start of a saccade and a fixation.
